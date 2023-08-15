@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="ICCVW '23:   Template-guided Illumination Correction for Document Images with Imperfect Geometric Reconstruction"
+    />
+    <meta
+      name="keywords"
+      content="Illumination Correction, Document Images, Template, OCR, Transformer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Template-guided Illumination Correction for Document Images with Imperfect Geometric Reconstruction 
+    </title>
+
+    <link
+      rel="stylesheet"
+      href="./static/fonts/fontawesome/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./static/fonts/fontawesome/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./static/fonts/fontawesome/css/solid.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="./static/css/fonts.css" />
+    <link rel="stylesheet" href="./static/css/academicons.min.css" />
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <link rel="icon" href="./static/images/favicon.ico" />
+
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-2 publication-title">
+                Template-guided Illumination Correction for Document Images with Imperfect Geometric Reconstruction 
+              </h1>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a
+                    href="https://www.fzi.de/team/felix-hertlein/"
+                    target="_blank"
+                    >Felix Hertlein</a
+                  >
+                  <span class="author-block"
+                    >and
+                    <a href="https://a-nau.github.io" target="_blank"
+                      >Alexander Naumann</a
+                    >
+                  </span>
+                </span>
+              </div>
+
+              <div class="is-size-6 publication-authors">
+                <span class="author-block">
+                  FZI Research Center for Information Technology, Karlsruhe,
+                  Germany
+                </span>
+                <br />
+                <span class="author-block">
+                  Karlsruhe Institute of Technology (KIT), Karlsruhe, Germany
+                </span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <!--                            <span class="link-block">-->
+                  <!--                                <a href="" class="external-link button is-normal is-rounded is-dark">-->
+                  <!--                                  <span class="icon">-->
+                  <!--                                      <i class="fas fa-file-pdf"></i>-->
+                  <!--                                  </span>-->
+                  <!--                                  <span>Paper (tbd)</span>-->
+                  <!--                                </a>-->
+                  <!--                              </span>-->
+                  <span class="link-block">
+                    <a
+                      href=""
+                      class="external-link button is-normal is-rounded is-dark"
+                      target="_blank"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-ieee" style="font-size: 1.2rem"></i>
+                      </span>
+                      <span>Paper (soon!)</span>
+                    </a>
+                  </span>
+                  <!-- Code Link. -->
+                  <span class="link-block">
+                    <a
+                      href=""
+                      class="external-link button is-normal is-rounded is-dark"
+                      target="_blank"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code (soon!)</span>
+                    </a>
+                  </span>
+                  <!-- Dataset Link. -->
+                  <span class="link-block">
+                    <a
+                      href="https://github.com/felixhertlein/"
+                      class="external-link button is-normal is-rounded is-dark"
+                      target="_blank"
+                    >
+                      <span class="icon">
+                        <i class="far fa-images"></i>
+                      </span>
+                      <span>Data (soon!)</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+              To facilitate the transition into the digital era, it is necessary to digitize printed documents such as forms and invoices. Due to the presence of diverse lighting conditions and geometric distortions in real-world photographs of documents, document image restoration typically consists of two stages: first, geometric unwarping to remove the displacement distortions and, second illumination correction to reinstate the original colors. </p>
+
+              <p>In this work, we tackle the problem of illumination correction for document images and, thereby, enhance downstream tasks, such as text extraction and document archival. Despite the recent state-of-the-art improvements in geometric unwarping, the reliability of those models is limited. Hence, we aim to reduce lighting impurity under the assumption of imperfectly unwarped documents. To reduce the complexity of the task, we incorporate a-priori known visual cues in the form of template images, which offer additional information about the perfect lighting conditions.  
+              </p>In this work, we present a novel approach for integrating prior visual cues in the form of document templates.
+              Our extensive evaluation shows a 15.0 % relative improvement in LPIPS and 6.3 % in CER over the state-of-the-art. We will make all code and data publicly available on this website.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <!--/ Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">IllTrTemplate</h2>
+            <div class="content has-text-justified">
+              We present a model named IllTrTemplate, which leverages a-priori
+              known templates in illumination correction. Our model extends the IllTr
+              model by <a href="#feng2021">Feng et al. [1]</a>.
+            </div>
+            <p>
+              <img src="static/images/overview.png" width="80%" />
+              <br />
+              <span style="font-size: small">
+                <b>Figure</b>: Our transformer-style model leverages templates (b) in
+addition to the input image (a) to achieve high quality results (c)
+for illumination correction in document images with imperfect ge-
+ometric reconstruction. Our architecture IllTrTemplate extends
+state of the art <a href="#feng2021">IllTr [1]</a>.
+              </span>
+              <br />
+            </p>
+
+            <br />
+            <br />
+            <br />
+            <section class="section" id="BibTeX">
+              <div class="container is-max-desktop content">
+                <h3 class="title">BibTeX</h3>
+                <pre style="text-align: left">
+<code>
+@article{Hertlein2023,
+	title        = {Template-guided Illumination Correction for Document Images with Imperfect Geometric Reconstruction},
+	author       = {Hertlein, Felix and Naumann, Alexander},
+	year         = 2023,
+	journal      = {International Conference on Computer Vision Workshop (ICCVW)}
+}
+</code>
+                </pre>
+              </div>
+            </section>
+
+            <br />
+            <br />
+            <br />
+            <h2 class="title is-4">References</h2>
+            <div class="content has-text-justified">
+              <div style="color: gray" id="feng2021">
+                [1] Feng, H., Wang, Y., Zhou, W., et al.: Doctr: Document image
+                transformer for geometric unwarping and illumination correction.
+                In: Proceedings of the 29th ACM International Conference on
+                Multimedia, pp 273–281 (2021a)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-centered"></div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <a
+              class="icon-link"
+              href="https://link.springer.com/content/pdf/10.1007/s10032-023-00434-x.pdf"
+              target="_blank"
+              class="external-link"
+            >
+              <i class="fas fa-file-pdf"></i>
+            </a>
+            <a
+              class="icon-link"
+              href="https://github.com/felixhertlein/"
+              target="_blank"
+              class="external-link"
+              disabled
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <div class="content">
+                <p style="text-align: center">
+                  This website template is borrowed from
+                  <a
+                    href="https://github.com/nerfies/nerfies.github.io"
+                    target="_blank"
+                    >https://nerfies.github.io</a
+                  >
+                </p>
+                <p style="text-align: center">© Felix Hertlein, 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
